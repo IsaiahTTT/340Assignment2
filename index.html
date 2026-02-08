@@ -22,10 +22,11 @@
     }
 
     header {
-        background-color: black;
-        color: white;
+        background-color: #000;
+        color: #ff2b2b;
         text-align: center;
-        padding: 1em;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 
     .character-card img {
@@ -83,6 +84,15 @@
         border-color: #ff2b2b;
         box-shadow: 0 0 8px rgba(255, 43, 43, 0.6);
     }
+
+    .container {
+        color: #ff2b2b !important;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    
 </style>
 
 
@@ -91,9 +101,44 @@
 
 <body>
 
-    <header>
-        StarWars Rule of Two Lineage
-    </header>
+
+   <!-- NAV BARRR-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+    <div class="container">
+        <a class="navbar-brand text-danger fw-bold" href="index.html">
+            Sith Lineage
+        </a>
+
+        <!-- button version -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sithNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="sithNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="details.html">Details</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="new-character-form.html">
+                        Add Character
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 
 
     <main>
@@ -107,7 +152,7 @@
                 </div>
             </div>
 
-            <!-- ROW 1 -->
+            <!-- FIRST ROW -->
             <div class="row mb-4">
                 <div class="col-12 d-flex justify-content-center">
                     <a href="details.html" class="text-decoration-none">
@@ -128,7 +173,7 @@
                     </a>
                 </div>
 
-                <!-- ROW 2 -->
+                <!-- SECOND ROW ZANNAH & COGNUS -->
                 <div class="row mb-4">
                     <div class="col-md-6 d-flex justify-content-center">
                         <a href="details.html" class="text-decoration-none">
@@ -172,7 +217,7 @@
 
                 </div>
 
-                <!-- ROW 3 -->
+                <!-- THIRD ROW PLAGEUIS AND SIDIOUS -->
                 <div class="row mb-5">
                     <div class="col-md-6 d-flex justify-content-center">
                         <a href="details.html" class="text-decoration-none">
@@ -238,5 +283,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
