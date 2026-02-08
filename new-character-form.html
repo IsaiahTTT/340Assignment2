@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>StarWars Rule of Two Lineage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    header {
+        background-color: #000;
+        color: #ff2b2b;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .character-card img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+
+    main {
+        background-color: black;
+        color: rgb(0, 0, 0)
+    }
+
+    .form-control {
+        background-color: #111;
+        color: white;
+        border: 1px solid #7a0000;
+    }
+
+    .form-control::placeholder {
+        color: #888;
+    }
+
+    .form-control:focus {
+        background-color: #000;
+        color: white;
+        border-color: #ff2b2b;
+        box-shadow: 0 0 8px rgba(255, 43, 43, 0.6);
+    }
+
+    .container {
+        color: #ff2b2b !important;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+</style>
+
+
+<body>
+    <nav class="navbar navbar-dark bg-black border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand text-danger fw-bold" href="index.html">
+                Sith Lineage
+            </a>
+
+            <ul class="navbar-nav flex-row ms-auto">
+
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="details.html">Details</a>
+                </li>
+
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item me-3">
+                    <a class="nav-link text-danger" href="new-character-form.html">
+                        Add a Character
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+</body>
+
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Add a new character</h1>
+        <form action="/add-character" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="e.g. Darth Vader" required>
+            </div>
+            <div class="mb-3">
+                <label for="apprenticeOf" class="form-label">Apprentice of (If applicable)</label>
+                <input type="text" class="form-control" id="apprenticeOf" name="apprenticeOf"
+                    placeholder="e.g. Darth Bane">
+            </div>
+            <div class="mb-3">
+                <label for="masterOf" class="form-label">Master of (If applicable)</label>
+                <input type="text" class="form-control" id="masterOf" name="masterOf" placeholder="e.g. Darth Malak">
+            </div>
+            <div class="mb-3">
+                <label for="short description" class="form-label">Short Description</label>
+                <input type="text" class="form-control" id="short description" name="short description"
+                    placeholder="minimum 200 words..." required>
+            </div>
+
+            <div class="mb-3">
+                <label for="fate" class="form-label">Fate</label>
+                <input type="text" class="form-control" id="fate" name="fate"
+                    placeholder="e.g. Killed by apprentice Darth Sidious" required>
+            </div>
+            <form>
+                <label for="imageUrl" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="imageUrl" name="imageUrl"
+                    placeholder="e.g. https://example.com/darth-vader.jpg" required>
+
+                <button type="submit" class="btn btn-danger mt-3">Add Character</button>
+            </form>
